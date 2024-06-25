@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Video Background -->
+        <video src="time.mp4" class="video-background" muted autoplay loop></video>
+        <div class="video-overlay"></div>
+        <!-- Form Input -->
+        <div class="counter-container">
+            <div class="counter-box">
+                <h3>Create a Custom Countdown!</h3>
+                <form action="#" id="countdown-form">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="What are you counting down to?">
+                    <label for="date">Select a Date</label>
+                    <input type="date" id="date"> 
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+            <!-- Counter Timing -->
+            <div class="counter-days" style="display: none;">
+                <h3>Countdown Title Here</h3>
+                <div class="timer">
+                    <div class="days">
+                        <h3></h3>DAYS
+                    </div>
+                    <div class="hours">
+                        <h3></h3>HOURS
+                    </div>
+                    <div class="minutes">
+                        <h3></h3>MINUTES
+                    </div>
+                    <div class="seconds">
+                        <h3></h3>SECONDS
+                    </div>
+                </div>
+                <button class="reset">RESET</button>
+            </div>
+            <!-- Complete -->
+            <div class="complete" style="display: none;">
+                <h3 id="complete-title">Countdown Complete!</h3>
+                <h3 id="complete-info">Countdown Finished on 05-05-2020</h3>
+                <button id="new-countdown">New Countdown</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
