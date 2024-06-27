@@ -27,7 +27,7 @@ video{
     z-index: 1;
 }
 .counter-container{
-    max-width: 34vw;
+    max-width: 54vw;
     min-height: 44vh;
     box-shadow: 2px 3px 4px 5px (255,255,255,0.7);
     z-index: 12;
@@ -94,6 +94,7 @@ form>input:focus{
 .timer h3{
     font-size: 3rem;
     font-weight: 400;
+    text-align: center;
 }
 .days,.hours,.minutes,.seconds{
     margin: 9px;
@@ -159,8 +160,8 @@ form>input:focus{
 #new-countdown:hover{
     background-color: rgb(59, 200, 59);
 }
-
-@media screen and (max-width:1290px){
+ 
+@media screen and (min-width:1290px){
     .video-background{
         width: 100vw;
         height: 100vh;
@@ -170,20 +171,215 @@ form>input:focus{
         height: 100vh;
     }
     .counter-container{
-        max-width: 40vw;
+        max-width: 44vw;
         min-height: 54vh;
         box-shadow: 2px 3px 4px 5px (255,255,255,0.7);
         z-index: 12;
         position: relative;
-        top: -72%;
-        right: -35%;
+        top: -77%;
+        right: -25%;
         background-color: rgba(0,0,0,0.1);
         backdrop-filter: blur(7px);
         border-radius: 13px;
-        /* padding: 2rem; */
+       
+    }
+    /* .counter-box h3{
+        
+        font-size: 9.4rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        margin:.8rem;
+    }
+    form>label{
+        margin: .8rem;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    form>input{
+        margin: 1px;
+        margin-top:0;
+        margin-left: 0;
+        border-radius: 6px;
+        border: none;
+        padding: 8px;
+        font-size: .8rem;
+        width: 37vw;
+        height: 3.5vh;
+    }
+    .submit{
+        background-color: rgb(8, 154, 8);
+        margin-top: 42px;
+    }
+    .counter-days{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 45vw;
+        min-height: 40vh;
+    }
+    .counter-days h3{
+        font-size: 1.7rem;
+    }
+    .timer{
+        display: flex;
+        justify-content: space-between;
+    } */
+    /* .timer h3{
+        font-size: 2.8rem;
+        font-weight: 400;
+        text-align: center;
+    } */
+    /* .days,.hours,.minutes,.seconds{
+        margin: 5px;
+        font-style: italic;
+    } */
+    /* .reset{
+        width: 20vw;
+        padding: .2rem;
+        font-size: 1rem;
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(8, 154, 8);
+    } */
+
+    /* .complete{
+        border: 2px solid; 
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } */
+    
+    /* #complete-title{
+        animation-name: complete;
+        animation-duration: 9s;
+        animation-timing-function: infinite;
+        font-size: 1.2rem;
+        font-weight: 400;
+    } */
+    /* #new-countdown{
+        width: 32vw;
+        font-size: 1.1rem;
+        border-radius: 7px;
+        border: none;
+        padding: .4rem;
+        background-color: rgb(8, 154, 8);
+    } */
+} 
+@media(min-width:475px){
+
+    .video-background{
+        width: 100vw;
+        height: 100vh;
+    }
+    video{
+        object-fit: cover;
+        height: 100vh;
+    }
+    .counter-container{
+        /* max-width: 55vw; */
+        min-height: 54vh;
+        box-shadow: 2px 3px 4px 5px (255,255,255,0.7);
+        z-index: 12;
+        /* position: relative;
+        top: -72%;
+        right: -35%; */
+        background-color: rgba(0,0,0,0.1);
+        backdrop-filter: blur(7px);
+        border-radius: 13px;
+        /* padding: .2rem; */
     }
     .counter-box h3{
         /* margin: 1rem; */
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        margin:.8rem;
+    }
+    form>label{
+        margin: .8rem;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    form>input{
+        margin: 1px;
+        margin-top:0;
+        margin-left: 0;
+        border-radius: 6px;
+        border: none;
+        padding: 8px;
+        font-size: .8rem;
+        width: 37vw;
+        height: 3.5vh;
+    }
+    .submit{
+        background-color: rgb(8, 154, 8);
+        margin-top: 32px;
+    }
+    .counter-days{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 45vw;
+        min-height: 40vh;
+    }
+    .counter-days h3{
+        font-size: 2.7rem;
+    }
+    .timer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .timer h3{
+        font-size: 2.8rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .days,.hours,.minutes,.seconds{
+        margin: 5px;
+        font-style: italic;
+    }
+    .reset{
+        width: 20vw;
+        padding: .2rem;
+        font-size: 1rem;
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(8, 154, 8);
+    }
+
+    .complete{
+        /* border: 2px solid; */
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #complete-title{
+        animation-name: complete;
+        animation-duration: 9s;
+        animation-timing-function: infinite;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    #new-countdown{
+        width: 32vw;
+        font-size: 1.1rem;
+        border-radius: 7px;
+        border: none;
+        padding: .4rem;
+        background-color: rgb(8, 154, 8);
     }
 }
+   
