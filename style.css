@@ -173,8 +173,8 @@ form>input:focus{
         height: 100vh;
     }
     .counter-container{
-        max-width: 65vw;
-        min-height: 54vh;
+        max-width: 70vw;
+        min-height: 44vh;
         box-shadow: 2px 3px 4px 5px (255,255,255,0.7);
         z-index: 12;
         position: relative;
@@ -208,7 +208,7 @@ form>input:focus{
         border: none;
         padding: 8px;
         font-size: .8rem;
-        width: 37vw;
+        width: 50vw;
         height: 3.5vh;
     }
     .submit{
@@ -226,10 +226,11 @@ form>input:focus{
     }
     .counter-days h3{
         font-size: 2rem;
+        
     }
     .timer{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .timer h3{
         font-size: 2rem;
@@ -240,7 +241,7 @@ form>input:focus{
         margin: 2px;
         font-style: italic;
         position: relative;
-        right: 20px;
+        right: .8rem;
     }
     .reset{
         width: 20vw;
